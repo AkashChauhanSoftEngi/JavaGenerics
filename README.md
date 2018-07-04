@@ -6,6 +6,7 @@
 
 >What is a Generic Type Parameter?
 A generic type parameter is when a type can be used as a parameter in a class, method or interface declaration.
+'''
 public interface Consumer {
     public void consume(String parameter)
 }
@@ -18,7 +19,8 @@ When we implement our Consumer, we need to pass type
 public class IntegerConsumer implements Consumer<Integer> {
     public void consume(Integer parameter)
 }
-
+'''
+	
 >Advantages of Using Generic Types?
 - Avoid code duplication
 - By using generics we have a compile type check which prevents ClassCastExceptions and removes the need for casting.
