@@ -9,6 +9,9 @@ public class RestrictGenericsToSubclass {
         myListInteger.add(1);
         myListInteger.add(2);
         System.out.println("MyListGeneric<Integer>: " + myListInteger.get(0) + "," + myListInteger.get(1));
+        
+        //RestrictGenericsToSubclass<String> restrictedStringList = 
+        //new RestrictGenericsToSubclass<String>();//COMPILER ERROR, because T extends Number
 	}
 }
 
