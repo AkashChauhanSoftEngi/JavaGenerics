@@ -11,6 +11,7 @@ public class RestrictGenericsToSuperClass {
 	}
 	
 	/*list of any type that is a super type of Integer*/
+	/*List<? super Integer> is a unbounded List that accepts any value that is a Integer or a superclass of Integer*/
 	public static void addNumbers(List<? super Integer> list) {
 	    for (int i = 1; i <= 10; i++) {
 	        list.add(i);
