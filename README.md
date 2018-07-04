@@ -35,3 +35,17 @@ A generic type parameter is when a type can be used as a parameter in a class, m
 ```java
  	class MyListGeneric<T>
 ```
+
+> What is a Wildcard type?
+- A wildcard type represents an unknown type. It’s detonated with a question mark as follows:
+```java
+	public static consumeListOfWildcardType(List<?> list)
+```
+ 
+>What is an Unbounded Wildcard?
+- An unbounded wildcard is a wildcard with no upper or lower bound, that can represent any type.
+- It’s also important to know that the wildcard type is not synonymous to object. This is because a wildcard can be any type whereas an object type is specifically an object (and cannot be a subclass of an object). Let’s demonstrate this with an example:
+```java
+	List<?> wildcardList = new ArrayList<String>(); 
+	List<Object> objectList = new ArrayList<String>(); // Compilation error
+```
