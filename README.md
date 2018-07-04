@@ -49,3 +49,9 @@ A generic type parameter is when a type can be used as a parameter in a class, m
 	List<?> wildcardList = new ArrayList<String>(); 
 	List<Object> objectList = new ArrayList<String>(); // Compilation error
 ```
+>What is difference between List<? extends T>  and  List <? super T> 
+- List<? extends T> will accept any List with Type extending T while List<? super T> will accept any List with type super class of T.
+
+>Can we use Generics with Array?
+- Array doesn't support Generics
+
